@@ -706,22 +706,31 @@ footer {
   .btn-slice {
     display: inline-block;
   }
+}
 
   
 /*========About us ===========*/
-.grid-2-columns {
-  background-color: #A0B4A0;
-  color: #f2f2f2;
-}
+  .main-about {
+    background-color: #A0B4A0;
+    color: #f2f2f2;
+    height: 100vh;
+    
+  }
+  .title-about {
+    padding-top: 5rem;
+    padding-left: 1.5rem;
+    text-transform: uppercase;
+  }
+  .about-text {
+    padding: 1.5rem;
+  }
 
-.grid-about-title {
-  padding-top: 5rem;
-  padding-left: 1.5rem;
-}
+  .about-image {
+    background: url("images/about-img.jpg");
+    background-size: contain;
+  }
 
-.grid-text {
-  padding: 1.5rem;
-}
+
 
 /*@media(min-width: 60rem) {
   .grid-2-columns {
