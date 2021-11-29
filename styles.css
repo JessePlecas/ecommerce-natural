@@ -285,7 +285,6 @@ header {
   text-align: center;
   width: 100%;
   margin: 1em;
-  z-index: 2;
 }
 
 nav ul {
@@ -743,13 +742,11 @@ footer {
     font-family: "Cormorant Garamond", serif;
   }
   
-.grid-overlay::after {
-  content: "about";
-  position: absolute;
-  left: 2.3em;
-  top: 0.3em;
-  color: #f2f2f2;
-  font-family: "Playfair Display", serif;
-  font-size: clamp(3em, 30vh, 17em);
-  line-height: 0.8;
-}}
+  .img-grid {
+    background: url("images/footer-img.jpg");
+    margin-top: 2rem;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+}*/}
