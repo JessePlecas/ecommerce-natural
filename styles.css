@@ -92,11 +92,13 @@ p:last-of-type {
 @media (min-width: 60rem) {
   .button {
     margin-top: 1rem;
+    text-transform: uppercase;
   }
 
   .btn-full {
     display: none;
   }
+
   .btn-slice {
     display: inline-block;
   }
@@ -304,11 +306,16 @@ nav a {
   text-transform: uppercase;
   padding: 0.5em;
   color: var(--clr-title);
+  transition: 1s;
+  
 }
 
 nav a:hover,
 nav a:focus {
-  color: var(--clr-nav);
+  color: #fff;
+  font-size: 1.5em ;
+  
+  
 }
 
 .hero {
@@ -682,6 +689,14 @@ footer {
     margin-right: 5rem;
   }
 
+  .fab {
+    transition: 1s;
+  }
+
+  .fab:hover {
+    font-size: 3rem;
+  }
+
   .btn {
     padding-top: 1em;
   }
@@ -696,31 +711,38 @@ footer {
   
 /*========About us ===========*/
 .grid-2-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1em;
-  background-color: #232323;
-  padding-left: 5rem;
-  padding-top: 5em;
+  background-color: #A0B4A0;
+  color: #f2f2f2;
 }
 
-.img-grid {
-  background: url("images/about-img.jpg");
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
+.grid-about-title {
+  padding-top: 5rem;
+  padding-left: 1.5rem;
 }
 
 .grid-text {
-  padding-top: 1em;
-  padding-left: 1em;
-  padding-right: 5em;
-  bottom: 0;
-  position: absolute;
-  color: var(--clr-title);
-  font-family: "Cormorant Garamond", serif;
+  padding: 1.5rem;
 }
 
+/*@media(min-width: 60rem) {
+  .grid-2-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    padding-top: 5rem;
+    padding: 1rem;
+  }
+  
+  .grid-text {
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 5em;
+    bottom: 0;
+    position: absolute;
+    color: var(--clr-title);
+    font-family: "Cormorant Garamond", serif;
+  }
+  
 .grid-overlay::after {
   content: "about";
   position: absolute;
