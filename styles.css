@@ -74,13 +74,15 @@ p:last-of-type {
 }
 
 @media (min-width: 20rem) {
+  .button {
+    margin-top: 1rem;
+  }
+
   .btn-full {
     display: inline-block;
     text-decoration: none;
     color: #f2f2f2;
     border: 2px solid #f2f2f2;
-
-    margin: 0;
   }
   .btn-slice {
     display: none;
@@ -88,8 +90,8 @@ p:last-of-type {
 }
 
 @media (min-width: 60rem) {
-  .btn {
-    padding-top: .5em;
+  .button {
+    margin-top: 1rem;
   }
 
   .btn-full {
@@ -580,7 +582,6 @@ footer {
     text-decoration: none;
     color: #f2f2f2;
     border: 2px solid #f2f2f2;
-
     margin: 0;
   }
   .btn-slice {
