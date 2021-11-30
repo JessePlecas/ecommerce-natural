@@ -37,6 +37,14 @@ h1 {
   font-family: "Playfair Display", serif;
   letter-spacing: 1px;
   margin-top: 0;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 10vw, 7rem);
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
+  margin-top: 0;
 }
 
 h3 {
@@ -48,7 +56,7 @@ h3 {
 }
 
 p {
-  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-size: clamp(1rem, 3vw, 1.3rem);
   font-family: "Cormorant Garamond", serif;
   font-weight: 600;
   letter-spacing: 1px;
@@ -354,7 +362,7 @@ nav a:focus {
   position: relative;
 }
 
-.details-text-box h1 {
+.details-text-box h2 {
   color: var(--clr-text);
   position: absolute;
   left: 50%;
@@ -377,7 +385,7 @@ nav a:focus {
   position: relative;
 }
 
-.handmade-text-box h1 {
+.handmade-text-box h2 {
   color: var(--clr-text);
   position: absolute;
   right: 50%;
@@ -395,7 +403,7 @@ nav a:focus {
     font-size: 0.75rem;
   }
 
-  h1 {
+  h2 {
     font-size: 2rem;
   }
 
@@ -413,7 +421,7 @@ nav a:focus {
     font-size: 1rem;
   }
 
-  h1 {
+  h2 {
     font-size: 2.5rem;
   }
 
@@ -719,6 +727,7 @@ footer {
     padding-left: 1.5rem;
     text-transform: uppercase;
     font-style: italic;
+    
     grid-area: title-about;
   }
   .about-text {
@@ -746,10 +755,18 @@ footer {
     gap: 3rem;
     padding: 3rem;
   }
+
+  .title-about {
+    margin-left: 10rem;
+  }
+    
   
   .about-text {
-    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 5rem;
     color: var(--clr-title);
     font-family: "Cormorant Garamond", serif;
   }
@@ -761,8 +778,9 @@ footer {
   .about-image {
     background: url("images/footer-img.jpg");
     margin-top: 2rem;
-    height: 100vh;
     background-size: cover;
     background-position: center;
+    max-width: 100%;
+    margin: 1rem;
   }
 }
