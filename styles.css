@@ -20,11 +20,12 @@ body {
 }
 
 :root {
-  --clr-nav: #42a26a;
+  --clr-nav: #CDAF95;
+  --clr-contact: #335C58;
   --clr-title: #f2f2f2;
   --clr-dark: #232323;
   --clr-text: #8b4513;
-  --clr-accent: #97bc62ff;
+  --clr-bg: #A0B4A0;
 }
 
 img {
@@ -41,9 +42,10 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1.5rem, 10vw, 7rem);
+  font-size: clamp(1rem, 10vw, 7rem);
   font-family: "Playfair Display", serif;
   letter-spacing: 1px;
+  font-weight: 300;
   margin-top: 0;
 }
 
@@ -74,6 +76,7 @@ p:last-of-type {
   text-transform: uppercase;
   margin-top: 1em;
   margin-bottom: 0;
+  color: var(--clr-title);
 }
 
 .sub-title {
@@ -320,9 +323,7 @@ nav a {
 nav a:hover,
 nav a:focus {
   color: #fff;
-  font-size: 1.5em ;
-  
-  
+  font-size: 1.5em ;  
 }
 
 .hero {
@@ -719,7 +720,7 @@ footer {
   
 /*========About us ===========*/
   .main-about {
-    background-color: #A0B4A0;
+    background-color: var(--clr-bg);
     color: #f2f2f2;
   }
   .title-about {
@@ -783,4 +784,50 @@ footer {
     max-width: 100%;
     margin: 1rem;
   }
+}
+
+/*======== Contact / Deliveries / Returns / TandC's ===========*/
+
+.contact-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/contact-us.jpg");
+  background-position: bottom;
+  background-size: cover;
+  align-items: left;
+  height: 50vh;
+  padding-top: 1.5rem;
+  max-width: 100vw;
+}
+
+@media (min-width: 20rem) {
+  .contact-page {
+    padding-top: 2em;
+  }
+}
+
+
+.box {
+  background-color: var(--clr-contact);
+  text-align: center;
+  padding: 3.5em;
+  width: 100vw;
+  outline: 3px solid var(--clr-title);
+  outline-offset: -2.5em;
+  position: relative;
+}
+
+.box h2 {
+  color: var(--clr-title);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0.3em;
+  background: var(--clr-contact);
+}
+
+.box p {
+  color: var(--clr-title)
+}
+
+.box li {
+  color: var(--clr-title)
 }
