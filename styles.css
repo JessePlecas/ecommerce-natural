@@ -21,12 +21,12 @@ body {
 
 :root {
   --clr-nav: #CDAF95;
-  --clr-contact: #335C58;
+  --clr-contact: #335c58;
   --clr-title: #f2f2f2;
   --clr-dark: #232323;
   --clr-text: #8b4513;
   --clr-bg: #A0B4A0;
-  --clr-info-bg: #d3d3d3;
+  --clr-info-bg:#335C58 ;
 }
 
 img {
@@ -743,8 +743,6 @@ footer {
     grid-area: about-image;
   }
 
-
-
 @media(min-width: 60rem) {
   .main-about {
     display: grid;
@@ -788,25 +786,36 @@ footer {
 
 /*======== Contact / Deliveries / Returns / TandC's ===========*/
 
-.contact-image {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("images/contact-us.jpg");
-  background-size: cover;
-  background-position: center;
-  max-width: 100%;
-  height: 70vh;
-  grid-area: contact-image;
-}
 
-@media (min-width: 20rem) {
+
+@media (min-width: 17.5rem) {
+  .contact-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/contact-us.jpg");
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: 70vh;
+    grid-area: contact-image;
+  }
   .contact-hero {
     text-align: center;
   }
 
   .contact-page {
-    top: 1rem;
-    padding-top: 7.5em;
+    top: 1em;
+    padding-top: 5em;
   }
-  
+
+  .contact-grid p.address{
+    padding-top: 3em;
+       
+  }
+}
+
+@media (min-width: 40rem) {
+  .contact-page {
+    padding-top: 4.4em;
+  }
 }
 
 .box {
@@ -840,64 +849,54 @@ footer {
   color: var(--clr-title);
 }
 
-.delivery-grid {
-  grid-area: delivery;
-  
-}
-
-.returns-grid {
-  grid-area: returns;
-}
-
-.tandc-grid {
-  grid-area: tandc;
-}
-
 @media (min-width: 60rem) {
-  .contact-hero {
-    background-color: var(--clr-info-bg);
-    overflow: hidden;
+.contact-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/contact-us.jpg");
+    background-position: 25% 75%;
+    background-size: cover;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr 1fr;
-    gap: 1em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 2em;
     grid-template-areas: 
-    "title contact-image"
-    "contact-us contact-image"
+    "contact-image contact-image"
+    "contact-us contact-us"
     "delivery returns"
     "tandc tandc";
   }
 
-  .contact-grid {
-    grid-area: contact-us;
-    max-width: 30vw;
-  }
-
   .contact-image {
-    height: 100vh;
-    
+    height: 80vh;
+    background-position: 25% 35%;
   }
 
   .contact-page {
-    padding-top: 1.5em;
     grid-area: title;
   }
-  
-  
-}
 
-/* .contact-hero h1 {
-    padding-top: 1rem;
+  .contact-page {
+    padding-top: 2.5em;
   }
 
-  .info-grid {
-    background-color: var(--clr-contact);
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    gap: 1em;
-    grid-template-areas: 
-    "contact-us contact-us contact-us"
-    "delivery returns tandc"
-    ;
-  }*/
+  .contact-grid {
+    grid-area: contact-us;
+  }
+
+  .delivery-grid {
+    grid-area: delivery;
+  }
+
+  .returns-grid {
+    grid-area: returns;
+  }
+
+  .tandc-grid {
+    grid-area: tandc;
+  }
+
+  .box {
+    background-color: rgba(51,92,88, .95);
+    margin: 1em;
+  }
+  
+}
