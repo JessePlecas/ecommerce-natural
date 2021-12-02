@@ -467,6 +467,8 @@ nav a:focus {
   }
 }
 
+/*==========Products===========*/
+
 .card-wrapper {
   padding-top: 3em;
 }
@@ -531,7 +533,8 @@ img {
   .card-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
   }
 }
 
@@ -552,6 +555,7 @@ h1.about-title {
   padding-top: 1em;
   text-align: center;
   color: var(--clr-dark);
+  margin-bottom: 0;
 }
 
 p.about-us {
@@ -592,7 +596,7 @@ footer {
   align-items: center;
 }
 
-@media (min-width: 20rem) {
+@media (min-width: 17rem) {
   .btn-full {
     display: inline-block;
     text-decoration: none;
@@ -606,7 +610,7 @@ footer {
 }
 
 .footer-social {
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.5rem;
   margin-top: 1.8rem;
   grid-area: footer-social;
 }
@@ -655,19 +659,19 @@ footer {
   }
 
   .footer-title {
-    padding-top: 1.5em;
+    padding-top: .3em;
   }
-
+  
   .fancy {
     line-height: 0.15;
     text-align: center;
   }
-  .fancy span {
+  .fancy-span {
     display: inline-block;
     position: relative;
   }
-  .fancy span:before,
-  .fancy span:after {
+  .fancy-span:before,
+  .fancy-span:after {
     content: "";
     position: absolute;
     height: 5px;
@@ -675,11 +679,11 @@ footer {
     top: 0;
     width: 500px;
   }
-  .fancy span:before {
+  .fancy-span:before {
     right: 100%;
     margin-right: 1em;
   }
-  .fancy span:after {
+  .fancy-span:after {
     left: 100%;
     margin-left: 1em;
   }
@@ -691,7 +695,7 @@ footer {
 
   .footer-social {
     border-top: 1px solid #f2f2f2;
-    padding: 2em;
+    padding-top: 2em;
   }
 
   .fab:not(:last-child) {
