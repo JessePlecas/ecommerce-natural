@@ -27,6 +27,7 @@ body {
   --clr-text: #8b4513;
   --clr-bg: #A0B4A0;
   --clr-info-bg:#335C58 ;
+  --clr-product: #d3d3d3;
 }
 
 img {
@@ -114,7 +115,7 @@ p:last-of-type {
     display: inline-block;
   }
 
-  /*--Button Styles--*/
+  /*======= Main Button Styles ========*/
   .btn-slice {
     padding: 1.2rem 2.5rem;
     border: 2px solid #ffffff;
@@ -297,7 +298,7 @@ header {
   width: 100%;
   margin: 1em;
 }
-
+/*======= Nav styles =======*/
 nav ul {
   margin: 0;
   padding: 0;
@@ -325,7 +326,7 @@ nav a:focus {
   color: #fff;
   font-size: 1.5em ;  
 }
-
+/*========= Landing page ========*/
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("images/landing\ page.jpg");
@@ -467,7 +468,7 @@ nav a:focus {
   }
 }
 
-/*==========Products===========*/
+/*========== Landing page products===========*/
 
 .card-wrapper {
   padding-top: 3em;
@@ -565,7 +566,7 @@ p.about-us {
   font-size: 2rem;
 }
 
-/*footer grid */
+/*======= Footer grid ======*/
 
 footer {
   background: #232323;
@@ -903,4 +904,195 @@ footer {
     margin: 1em;
   }
   
+}
+
+/*======== Products page ========*/ 
+
+.products-container {
+  width: 80vw;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.lg-title,
+.sm-title {
+  padding: 0.6rem 0;
+  text-transform: capitalize;
+}
+
+.lg-title {
+  color: var(--clr-title);
+  font-size: 4.5rem;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.sm-title {
+  font-weight: 300;
+  font-size: 1rem;
+  text-transform: uppercase;
+  
+}
+
+.text-light {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+  opacity: 0.5;
+  margin: 0.4rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+/*==== product section ====*/
+.products {
+  background: var(--clr-nav);
+}
+
+.product-items {
+  background: #FAF9F6;
+  padding: 3.2rem 0;
+}
+
+.product-items .text-light {
+  text-align: center;
+  width: 70%;
+  margin: 0.9rem auto;
+  padding-bottom: 2rem;
+}
+
+.product {
+  margin: 2rem;
+  position: relative;
+}
+
+.product-content {
+  background: var(--clr-product);
+  padding: 3rem 0.5rem 2rem 0.5rem;
+  cursor: pointer;
+}
+
+.product-image {
+  background: var(--clr-title);
+  box-shadow: 0 0 20px 10px var(--clr-title);
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  transition: background 0.5s ease;
+}
+
+.product-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.4rem;
+  padding-top: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.btn-cart, .btn-buy {
+  background: transparent;
+  border: 1px solid black;
+  padding: 0.8rem 0;
+  width: 125px;
+  font-family: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  transition: all 0.6s ease;
+}
+
+.btn-cart {
+  background: black;
+  color: white;
+}
+
+.btn-cart:hover {
+  background: var(--clr-contact);
+}
+.btn-buy {
+  background: white;
+}
+.btn-buy:hover {
+  background: var(--clr-contact);
+  color: white;
+}
+
+.product-info {
+  background: white;
+  padding: 2rem;
+}
+
+.product-info-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating {
+  color: var(--clr-contact);
+}
+
+.product-name {
+  color: black;
+  display: block;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.product-price {
+  padding-top: 0.6rem;
+  padding-right: 0.6rem;
+  display: inline-block;
+}
+
+.product-price:first-of-type {
+  text-decoration: line-through;
+  color: var(--clr-contact);
+}
+
+.product:hover .product-buttons {
+  opacity: 1;
+}
+
+.discount .sm-title {
+  background: var(--clr-contact);
+  color: white;
+  display: inline-block;
+  padding: 0.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  z-index: 1;
+  letter-spacing: 3px;
+}
+
+@media (min-width: 60rem) {
+  .product-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 75rem) {
+  .product-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .product {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+}
+
+@media (min-width: 83rem) {
+  .product-items {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
