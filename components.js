@@ -146,9 +146,6 @@ const products = [
     },
 ] 
 
-
-
-
 class ProductTile extends React.Component {
     render() {
         return (
@@ -158,7 +155,7 @@ class ProductTile extends React.Component {
                       <img src={this.props.product.image} alt="product-image"/>
                     </div>
                     <div className="buttons">
-                      <button type ="button" className="btn-cart">Add to cart<span>
+                      <button type ="button" className="btn-view">Quick View<span>
                         <i className="fas fa-plus"></i></span>
                       </button>
                       <button type ="button" className="btn-buy">Buy now<span>
@@ -188,7 +185,6 @@ class ProductTile extends React.Component {
         )
     }
 }
-
 
 class ProductCatalog extends React.Component {
     renderTile = (current_item) => {
