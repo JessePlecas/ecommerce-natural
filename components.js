@@ -119,7 +119,31 @@ const products = [
             "A 100% natural blend of mineral-rich Epsom and Dead Sea Salts, infused with Jasmine and Lavender essentials oils to calm and soothe the senses, and Valerian to promote deep, peaceful relaxation.", 
             "Drift into a peaceful nights sleep. Epsom and Dead Sea Mineral Salts. With Lavender, Jasmine & Valerian."
         ]
-    }
+    },
+    {
+        "id": "product-6",
+        "name": "Natural Toothpaste",
+        "image": "images/product-6.jpg",
+        "price": "€14.99",
+        "short_description": "Our all-natural Toothpaste keep your teeth healthy, strong, and minty fresh.",
+        "bullet_description": [
+            "We only use natural ingredients. No sulfates, parabens, allergens, dyes or any other chemical.", 
+            "The storage containers for our Toothpaste are practical and sustainable at the same time. They last forever but can also easily be recycled.", 
+            "All-natural means Toothpaste without bad chemicals or micro-plastics, because those unnecessary and unsustainable ingredients hurt the planet."
+        ]
+    },
+    {
+        "id": "product-7",
+        "name": "Natural Body Butter",
+        "image": "images/product-7.jpg",
+        "price": "€27.99",
+        "short_description": "Goat milk and lychee body butter dedicated to sensitive and dry skin.",
+        "bullet_description": [
+            "Shea butter protects and soothes the skin, nourishes it and moisturizes, acts as a natural UV filter.", 
+            "Beeswax seals epidermis against the waist of water and the pearl extract accelerates healing, protects and smoothes by decreasing ageing process.", 
+            "This wonderful cosmetic contains also lychee fruit extract rich in vitamins, especially in vitamin C. Goat's milk proteins are the royal dose of youth recovery."
+        ]
+    },
 ] 
 
 
@@ -133,7 +157,7 @@ class ProductTile extends React.Component {
                     <div className="product-image" id="product-image">
                       <img src={this.props.product.image} alt="product-image"/>
                     </div>
-                    <div className="product-buttons">
+                    <div className="buttons">
                       <button type ="button" className="btn-cart">Add to cart<span>
                         <i className="fas fa-plus"></i></span>
                       </button>
