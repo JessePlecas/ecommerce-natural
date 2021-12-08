@@ -1089,3 +1089,9 @@ footer {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/*=========== Product Detail =========*/
+#product-item {
+  background: var(--clr-info-bg);
+  height: 70vh;
+}
