@@ -1,4 +1,4 @@
-const products = [
+export default [
     {
         "id": "product-1",
         "name": "Eco Cotton QTips",
@@ -146,9 +146,12 @@ const products = [
     },
 ] 
 
-const setup = function() {
+/*const setup = function() {
     ReactDOM.render(<ProductCatalog products={products}></ProductCatalog>, document.getElementById('product-catalog'));
 }
 
-setup();
+setup();*/
+
+/*ReactDOM.render(<ProductView></ProductView>, document.getElementById('product-view'));*/
+
 

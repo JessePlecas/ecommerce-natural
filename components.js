@@ -1,5 +1,62 @@
+import products from "./main";
 
-class ProductTile extends React.Component {
+function App() {
+    return(
+        <div className="App">
+            <div className="product-content">
+            {products.map((item, index) => {
+                return (
+                    <div key={index} className="product">
+                        <div className="product-content">
+                            <div className="product-image" >
+                                <img src={this.props.product.image} alt="product-image"/>
+                            </div>
+                            <div className="buttons">
+                                <button type ="button" className="btn-view">Quick View<span>
+                                    <i className="fas fa-plus"></i></span>
+                                </button>
+                                <a className="button is-primary" href={"product_detail.html?id=" + this.props.product.id} target="_self">
+                                    <strong>Click</strong>
+                                </a>
+                                <button type ="button" className="btn-buy">Buy now<span>
+                                    <i className="fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                            <div className="product-info">
+                                <div className="product-info-top">
+                                <h2 className="sm-title">{this.props.product.name}</h2>
+                                <div className="rating">
+                                    <span><i className= "fas fa-star"></i></span>
+                                    <span><i className= "fas fa-star"></i></span>
+                                    <span><i className= "fas fa-star"></i></span>
+                                    <span><i className= "fas fa-star"></i></span>
+                                    <span><i className= "far fa-star"></i></span>
+                                </div>
+                                </div>
+                                <a href="product_detail.html" className="product-name">{this.props.product.name}</a>
+                    
+                                <p className="product-price">{this.props.product.price}</p>
+                                <p className="product-price">€6.79</p>
+                            </div>
+                            <div className="discount">
+                                <h2 className="sm-title">15% off</h2>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                )
+            })}
+            </div>
+            
+        </div>
+        
+    )
+}
+
+export default App;
+
+/*class ProductTile extends React.Component {
     render() {
         return (
             <div className="product">
@@ -11,6 +68,9 @@ class ProductTile extends React.Component {
                       <button type ="button" className="btn-view">Quick View<span>
                         <i className="fas fa-plus"></i></span>
                       </button>
+                      <a className="button is-primary" href={"product_detail.html?id=" + this.props.product.id} target="_self">
+                        <strong>Click</strong>
+                    </a>
                       <button type ="button" className="btn-buy">Buy now<span>
                         <i className="fas fa-shopping-cart"></i></span>
                       </button>
@@ -28,6 +88,7 @@ class ProductTile extends React.Component {
                       </div>
                     </div>
                     <a href="product_detail.html" className="product-name">{this.props.product.name}</a>
+                    
                     <p className="product-price">{this.props.product.price}</p>
                     <p className="product-price">€6.79</p>
                   </div>
@@ -52,4 +113,5 @@ class ProductCatalog extends React.Component {
         }
         return tiles;
     }
-}
+}*/
+
