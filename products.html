@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Products page</title>
-    
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -13,6 +12,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
@@ -40,10 +40,506 @@
             ingredients and scented with stunning natural oils. All our packaging comes from recycled materials.
           </p>
 
-          <div id="product-items">
-            <div id="product-catalog"></div>
-          </div>
+          <section class="landing-products products-list">
+            <ul class="card-wrapper">
+              <li class="card" data-name="0">
+                <img src="images/product-1.jpg" alt="Biodegradable cotton-buds" />
+                <h3>Eco Friendly Cotton-Buds</h3>
+                <p class="price">€7.99</p>
+                <div class="buttons">
+                  <button type ="button" class="btn-view">Quick View<span>
+                    <i class="fas fa-plus"></i></span>
+                  </button>
+                  <button type ="button" class="btn-buy">Buy now<span>
+                    <i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </li>
+      
+              <li class="card" data-name="1">
+                <img src="images/product-2.jpg" alt="Bamboo Toothbrush" />
+                <h3>Bamboo Toothbrush</h3>
+                <p class="price">€10.99</p>
+                <div class="buttons">
+                  <button type ="button" class="btn-view">Quick View<span>
+                    <i class="fas fa-plus"></i></span>
+                  </button>
+                  <button type ="button" class="btn-buy">Buy now<span>
+                    <i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </li>
+      
+              <li class="card" data-name="2">
+                <img src="images/product-3.jpg" alt="Handmade Soap" />
+                <h3>Handmade Soap</h3>
+                <p class="price">€4.99</p>
+                <div class="buttons">
+                  <button type ="button" class="btn-view">Quick View<span>
+                    <i class="fas fa-plus"></i></span>
+                  </button>
+                  <button type ="button" class="btn-buy">Buy now<span>
+                    <i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </li>
+      
+              <li class="card" data-name="3">
+                <img src="images/product-4.jpg" alt="Bamboo Utensils" />
+                <h3>Bamboo Utensils</h3>
+                <p class="price">€25.99</p>
+                <div class="buttons">
+                  <button type ="button" class="btn-view">Quick View<span>
+                    <i class="fas fa-plus"></i></span>
+                  </button>
+                  <button type ="button" class="btn-buy">Buy now<span>
+                    <i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </li>
+      
+              <li class="card" data-name="4">
+                <img src="images/product-5.jpg" alt="Organic Face serum" />
+                <h3>Organic Face Serum</h3>
+                <p class="price">€22.99</p>
+                <div class="buttons">
+                  <button type ="button" class="btn-view">Quick View<span>
+                    <i class="fas fa-plus"></i></span>
+                  </button>
+                  <button type ="button" class="btn-buy">Buy now<span>
+                    <i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </li>
+      
+              <li class="card" data-name="5">
+                <img src="images/product-6.jpg" alt="Natural Toothpaste" />
+                <h3>Natural Toothpaste</h3>
+                <p class="price">€7.99</p>
+                <div class="buttons">
+                  <button type ="button" class="btn-view">Quick View<span>
+                    <i class="fas fa-plus"></i></span>
+                  </button>
+                  <button type ="button" class="btn-buy">Buy now<span>
+                    <i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </li>
+      
+              <li class="card" data-name="6">
+                <img src="images/product-7.jpg" alt="organic face cream" />
+                <h3>Organic Face Cream</h3>
+                <p class="price">€19.99</p>
+                <div class="buttons">
+                  <button type ="button" class="btn-view">Quick View<span>
+                    <i class="fas fa-plus"></i></span>
+                  </button>
+                  <button type ="button" class="btn-buy">Buy now<span>
+                    <i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </li>
+      
+              <li class="card" data-name="7">
+                <img src="images/product-8.jpg" alt="Natural Nail brush" />
+                <h3>Natural Nail Brush</h3>
+                <p class="price">€4.99</p>
+                <div class="buttons">
+                  <button type ="button" class="btn-view">Quick View<span>
+                    <i class="fas fa-plus"></i></span>
+                  </button>
+                  <button type ="button" class="btn-buy">Buy now<span>
+                    <i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </section> 
     </section>
+
+    <!-- Product Preview -->
+<div class="product-preview">
+  <div class="preview container spacing" data-target="0">
+    <div class="product">
+        <div class="product-content">
+            <img src="images/product-1.jpg">
+            <div class="cta">
+              <div class="pricing">
+                <p class="product-price">€7.80</p>
+                <p class="product-price">€6.79</p>
+              </div>
+            <div class="button">
+                <button type ="button" class="btn-buy-now">Buy now<span>
+                  <i class="fas fa-shopping-cart"></i></span>
+                </button>
+            </div>
+            </div>
+            <h3 class="product-title-view">Eco Cotton QTips</h3>
+        </div>
+        <div class="product-info">
+            <div class="rating">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class= "fas fa-star"></i></span>
+              <span><i class= "fas fa-star"></i></span>
+              <span><i class= "fas fa-star"></i></span>
+              <span><i class= "far fa-star"></i></span>
+            </div>
+            <p class="product-info-top">Our cotton buds are made from bamboo and soft cotton, thus 100% biodegradable</p>
+            <p>After usage, you can dispose of the cotton swabs by simply throwing them into your organic waste, compost or no-matter-where.<br> 
+              Come in box made of recycled cardboard.<br>
+              100 cotton swabs per box.<br> 
+              Made with 100% cotton and bamboo.</p>
+        </div>
+        <div class="discount">
+              <h2 class="sm-title">15% off</h2>
+        </div>
+          <i class="fas fa-times"></i>
+    </div>     
+  </div>
+
+    <div class="preview container spacing" data-target="1">
+      <div class="product">
+          <div class="product-content">
+              <img src="images/product-2.jpg">
+              <div class="cta">
+                <div class="pricing">
+                  <p class="product-price">€9.20</p>
+                  <p class="product-price">€7.99</p>
+                </div>
+              <div class="button">
+                  <button type ="button" class="btn-buy">Buy now<span>
+                    <i class="fas fa-shopping-cart"></i></span>
+                  </button>
+              </div>
+              </div>
+              <h3 class="product-title-view">Bamboo Toothbrush</h3>
+            </div>
+            <div class="product-info">
+              <div class="rating">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class= "fas fa-star"></i></span>
+                <span><i class= "fas fa-star"></i></span>
+                <span><i class= "fas fa-star"></i></span>
+                <span><i class= "far fa-star"></i></span>
+              </div>
+              <p class="product-info-top">The medium soft bristles ensure thorough 
+                cleansing of your teeth while also protecting your gums.</p>
+              <p>The handle is made of fast-growing Moso bamboo which is biodegradable.<br> 
+                Artificial irrigation is not used in our bamboo cultivation, nor are pesticides 
+                or other chemicals.<br>
+                The biobased bristles are obtained from castor oil. The oil derived from the plant 
+                ricinus communis is processed into our biobased bristles and is free of BPA and petroleum.</p>
+              </div>
+              <div class="discount">
+                <h2 class="sm-title">15% off</h2>
+              </div>
+              <i class="fas fa-times"></i>
+            </div>     
+      </div>
+
+      <div class="preview container spacing" data-target="2">
+        <div class="product">
+            <div class="product-content">
+                <img src="images/product-3.jpg">
+                <div class="cta">
+                  <div class="pricing">
+                    <p class="product-price">€10.30</p>
+                    <p class="product-price">€8.99</p>
+                  </div>
+                <div class="button">
+                    <button type ="button" class="btn-buy">Buy now<span>
+                      <i class="fas fa-shopping-cart"></i></span>
+                    </button>
+                </div>
+                </div>
+                <h3 class="product-title-view">Natural Soap</h3>
+              </div>
+              <div class="product-info">
+                <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class= "fas fa-star"></i></span>
+                  <span><i class= "fas fa-star"></i></span>
+                  <span><i class= "fas fa-star"></i></span>
+                  <span><i class= "fas fa-star"></i></span>
+                </div>
+                <p class="product-info-top">Handmade soap with skin-loving oils, kinds of butter, herbs, 
+                  clays, spices and pure essential oils.</p>
+                <p>Each bar natural soap is made with only natural soap ingredients that were 
+                  specifically chosen to provide you with the all-natural shower experience.<br> 
+                  Essential oils add fragrance to our natural soap bars as well as contribute their 
+                  healthful qualities through their various abilities to tone, balance, relax, cleanse and invigorate.<br>
+                  Each bar is also made with only natural ingredients when it comes to colouring our soaps.</p>
+                </div>
+                <div class="discount">
+                  <h2 class="sm-title">15% off</h2>
+                </div>
+                <i class="fas fa-times"></i>
+              </div>     
+        </div>
+
+        <div class="preview container spacing" data-target="3">
+          <div class="product">
+              <div class="product-content">
+                  <img src="images/product-4.jpg">
+                  <div class="cta">
+                    <div class="pricing">
+                      <p class="product-price">€21.99</p>
+                      <p class="product-price">€18.70</p>
+                    </div>
+                  <div class="button">
+                      <button type ="button" class="btn-buy">Buy now<span>
+                        <i class="fas fa-shopping-cart"></i></span>
+                      </button>
+                  </div>
+                  </div>
+                  <h3 class="product-title-view">Bamboo Utensils</h3>
+                </div>
+                <div class="product-info">
+                  <div class="rating">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class= "fas fa-star"></i></span>
+                    <span><i class= "fas fa-star"></i></span>
+                    <span><i class= "fas fa-star"></i></span>
+                    <span><i class= "fas fa-star"></i></span>
+                  </div>
+                  <p class="product-info-top">Handmade bamboo utensils for your everyday use.</p>
+                  <p>Portable healthy and reusable bamboo cutlery set, the pouch keeps utensils sanitary, 
+                    prefect for camping, travel, school, office or home.<br> 
+                    Ergonomically designed handle for a secure grip, provides good balance and anti-slip.<br>
+                    Well designed pouch, each utensil has a compartment so that they aren't bumping into each other, which can build up unnecessary wear.</p>
+                  </div>
+                  <div class="discount">
+                    <h2 class="sm-title">15% off</h2>
+                  </div>
+                  <i class="fas fa-times"></i>
+                </div>     
+          </div>
+
+          <div class="preview container spacing" data-target="4">
+            <div class="product">
+                <div class="product-content">
+                    <img src="images/product-5.jpg">
+                    <div class="cta">
+                      <div class="pricing">
+                        <p class="product-price">€49.99</p>
+                        <p class="product-price">€42.49</p>
+                      </div>
+                    <div class="button">
+                        <button type ="button" class="btn-buy">Buy now<span>
+                          <i class="fas fa-shopping-cart"></i></span>
+                        </button>
+                    </div>
+                    </div>
+                    <h3 class="product-title-view">Skincare Set</h3>
+                  </div>
+                  <div class="product-info">
+                    <div class="rating">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class= "fas fa-star"></i></span>
+                      <span><i class= "fas fa-star"></i></span>
+                      <span><i class= "fas fa-star"></i></span>
+                      <span><i class= "fas fa-star"></i></span>
+                    </div>
+                    <p class="product-info-top">Organic face wash, toner and oil made with 100% natural ingredients.</p>
+                    <p>Organic flowers combined with essential oils and handmade soap ensure a clean and gentle cleanse.<br> 
+                      Our toner refreshes dull skin and is again 100% natural on you and our planet.<br>
+                      Floral oil added to your skin as the final step to your skincare routine for a softer and dewey face.</p>
+                    </div>
+                    <div class="discount">
+                      <h2 class="sm-title">15% off</h2>
+                    </div>
+                    <i class="fas fa-times"></i>
+                  </div>     
+            </div>
+
+            <div class="preview container spacing" data-target="5">
+              <div class="product">
+                  <div class="product-content">
+                      <img src="images/product-6.jpg">
+                      <div class="cta">
+                        <div class="pricing">
+                          <p class="product-price">€14.99</p>
+                          <p class="product-price">€12.74</p>
+                        </div>
+                      <div class="button">
+                          <button type ="button" class="btn-buy">Buy now<span>
+                            <i class="fas fa-shopping-cart"></i></span>
+                          </button>
+                      </div>
+                      </div>
+                      <h3 class="product-title-view">Natural Toothpaste</h3>
+                    </div>
+                    <div class="product-info">
+                      <div class="rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class= "fas fa-star"></i></span>
+                        <span><i class= "fas fa-star"></i></span>
+                        <span><i class= "fas fa-star"></i></span>
+                        <span><i class= "fas fa-star"></i></span>
+                      </div>
+                      <p class="product-info-top">Our all-natural Toothpaste keep your teeth healthy, strong, and minty fresh.</p>
+                      <p>We only use natural ingredients. No sulfates, parabens, allergens, dyes or any other chemical.<br> 
+                        The storage containers for our Toothpaste are practical and sustainable at the same time. They last forever 
+                        but can also easily be recycled.<br>
+                        All-natural means Toothpaste without bad chemicals or micro-plastics, because those unnecessary and unsustainable ingredients hurt the planet.</p>
+                      </div>
+                      <div class="discount">
+                        <h2 class="sm-title">15% off</h2>
+                      </div>
+                      <i class="fas fa-times"></i>
+                    </div>     
+              </div>
+
+              <div class="preview container spacing" data-target="6">
+                <div class="product">
+                    <div class="product-content">
+                        <img src="images/product-7.jpg">
+                        <div class="cta">
+                          <div class="pricing">
+                            <p class="product-price">€27.99</p>
+                            <p class="product-price">€23.79</p>
+                          </div>
+                        <div class="button">
+                            <button type ="button" class="btn-buy">Buy now<span>
+                              <i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                        </div>
+                        <h3 class="product-title-view">Natural Body Butter</h3>
+                      </div>
+                      <div class="product-info">
+                        <div class="rating">
+                          <span><i class="fas fa-star"></i></span>
+                          <span><i class= "fas fa-star"></i></span>
+                          <span><i class= "fas fa-star"></i></span>
+                          <span><i class= "fas fa-star"></i></span>
+                          <span><i class= "fas fa-star"></i></span>
+                        </div>
+                        <p class="product-info-top">Goat milk and lychee body butter dedicated to sensitive and dry skin.</p>
+                        <p>Shea butter protects and soothes the skin, nourishes it and moisturizes, acts as a natural UV filter.<br> 
+                          Beeswax seals epidermis against the waist of water and the pearl extract accelerates healing, protects and smoothes by decreasing ageing process.<br>
+                          This wonderful cosmetic contains also lychee fruit extract rich in vitamins, especially in vitamin C. Goat's milk proteins are the royal dose of youth recovery.</p>
+                        </div>
+                        <div class="discount">
+                          <h2 class="sm-title">15% off</h2>
+                        </div>
+                        <i class="fas fa-times"></i>
+                      </div>     
+                </div>
+
+                <div class="preview container spacing" data-target="7">
+                  <div class="product">
+                      <div class="product-content">
+                          <img src="images/product-8.jpg">
+                          <div class="cta">
+                            <div class="pricing">
+                              <p class="product-price">€9.99</p>
+                              <p class="product-price">€8.49</p>
+                            </div>
+                          <div class="button">
+                              <button type ="button" class="btn-buy">Buy now<span>
+                                <i class="fas fa-shopping-cart"></i></span>
+                              </button>
+                          </div>
+                          </div>
+                          <h3 class="product-title-view">Bamboo Nailbrush</h3>
+                        </div>
+                        <div class="product-info">
+                          <div class="rating">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class= "fas fa-star"></i></span>
+                            <span><i class= "fas fa-star"></i></span>
+                            <span><i class= "fas fa-star"></i></span>
+                            <span><i class= "fas fa-star"></i></span>
+                          </div>
+                          <p class="product-info-top">Bamboo Nail brush with Mane & Cactus Bristle.</p>
+                          <p>Made with bamboo for the handle part with mane & cactus bristles for properly cleaning your nails.<br> 
+                            The jute string loop allows you to hang the nail brush when not in use.<br>
+                            Simple yet elegant look from high quality materials.</p>
+                          </div>
+                          <div class="discount">
+                            <h2 class="sm-title">15% off</h2>
+                          </div>
+                          <i class="fas fa-times"></i>
+                        </div>     
+                  </div>
+
+                  <div class="preview container spacing" data-target="8">
+                    <div class="product">
+                        <div class="product-content">
+                            <img src="images/product-9.jpg">
+                            <div class="cta">
+                              <div class="pricing">
+                                <p class="product-price">€9.99</p>
+                                <p class="product-price">€8.49</p>
+                              </div>
+                            <div class="button">
+                                <button type ="button" class="btn-buy">Buy now<span>
+                                  <i class="fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                            </div>
+                            <h3 class="product-title-view">Shampoo Bar</h3>
+                          </div>
+                          <div class="product-info">
+                            <div class="rating">
+                              <span><i class="fas fa-star"></i></span>
+                              <span><i class= "fas fa-star"></i></span>
+                              <span><i class= "fas fa-star"></i></span>
+                              <span><i class= "fas fa-star"></i></span>
+                              <span><i class= "fas fa-star"></i></span>
+                            </div>
+                            <p class="product-info-top">Eucaliptus and Nettle shampoo bar</p>
+                            <p>Green clay and nettle actually help to strengthen and promote hair growth.<br> 
+                              Gently fragranced with eucaliptus, tea tree and lemon verbena essential oils to refresh your hair and scalp and to soothe your senses.<br>
+                              It is suitable for greasy hair acting against dandruff. It has an antibacterial effect as well thanks to the essential oils.</p>
+                            </div>
+                            <div class="discount">
+                              <h2 class="sm-title">15% off</h2>
+                            </div>
+                            <i class="fas fa-times"></i>
+                          </div>     
+                    </div>
+
+                    <div class="preview container spacing" data-target="9">
+                      <div class="product">
+                          <div class="product-content">
+                              <img src="images/product-10.jpg">
+                              <div class="cta">
+                                <div class="pricing">
+                                  <p class="product-price">€12.99</p>
+                                  <p class="product-price">€11.04</p>
+                                </div>
+                              <div class="button">
+                                  <button type ="button" class="btn-buy">Buy now<span>
+                                    <i class="fas fa-shopping-cart"></i></span>
+                                  </button>
+                              </div>
+                              </div>
+                              <h3 class="product-title-view">Bath Salts</h3>
+                            </div>
+                            <div class="product-info">
+                              <div class="rating">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class= "fas fa-star"></i></span>
+                                <span><i class= "fas fa-star"></i></span>
+                                <span><i class= "fas fa-star"></i></span>
+                                <span><i class= "fas fa-star"></i></span>
+                              </div>
+                              <p class="product-info-top">Natural bath salts with essential oils and petals.</p>
+                              <p>A bathing ritual before bed can help encourage a deep, restorative night's sleep.<br> 
+                                A 100% natural blend of mineral-rich Epsom and Dead Sea Salts, infused with Jasmine and 
+                                Lavender essentials oils to calm and soothe the senses, and Valerian to promote deep, peaceful relaxation.<br>
+                                Drift into a peaceful nights sleep. Epsom and Dead Sea Mineral Salts. With Lavender, Jasmine & Valerian.</p>
+                              </div>
+                              <div class="discount">
+                                <h2 class="sm-title">15% off</h2>
+                              </div>
+                              <i class="fas fa-times"></i>
+                            </div>     
+                      </div>
+  
+</div>
 
     <footer>
       <h1 class="footer-title fancy"><span class="fancy-span">natural</span></h1></div>
@@ -73,14 +569,6 @@
         &copy;A design by Jesse Plecas.
       </div>-->
     </footer>
-
-  <!-- scripts -->
-  <script src="components.js" type="text/babel"></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="text/babel" src="main.js"></script>
   </body>
   </html>
   <!-- background image Photo by Irina Iriser from Pexels-->
