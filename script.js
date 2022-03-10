@@ -2,7 +2,7 @@
     let previewContainer = document.querySelector('.product-preview');
     let previewBox = previewContainer.querySelectorAll('.preview');
 
-        document.querySelectorAll('.buttons .view').forEach(button => {
+        document.querySelectorAll('.btn-view').forEach(button => {
         button.onclick = () => {
             previewContainer.style.display = 'flex';
             let name = button.getAttribute('data-name');
@@ -10,7 +10,6 @@
                 let target = preview.getAttribute('data-target');
                 if(name === target) {
                     preview.classList.add('active');
-            
                 }
             });
         };
@@ -29,10 +28,10 @@
     
     
     document.addEventListener('click', function(event) {
-        cart.style.display = 'block';
         const shoppingCart = event.target.closest('.fa-cart-shopping');
         if (shoppingCart !== null) {
             cart.classList.add('active');
+            cart.style.display = 'block';
         }
     });
 
