@@ -331,6 +331,19 @@ nav a:focus {
   color: #fff;
   font-size: 1.5em ;  
 }
+
+.fa-cart-shopping {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  transition: 1s;
+  color: #fff;
+  cursor: pointer;
+}
+
+.fa-cart-shopping:hover {
+  font-size: 1.5em;
+}
 /*========= Landing page ========*/
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -1196,14 +1209,18 @@ footer {
 /* ======== CART ========= */
 
 .cart {
+  position: relative;
   max-width: 100%;
   font-family: 'Lato', sans-serif;
   background-color: var(--clr-product);
   color: var(--clr-dark);
   text-align: center;
   padding-top: .5em;
-  /*display: none;*/
-  
+  display: none;
+}
+
+.cart.active {
+  display: inline-block;
 }
 
 

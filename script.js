@@ -1,4 +1,4 @@
- 
+// Preview container 
     let previewContainer = document.querySelector('.product-preview');
     let previewBox = previewContainer.querySelectorAll('.preview');
 
@@ -16,7 +16,7 @@
         };
     });
 
-
+    // Close preview
     previewBox.forEach(close => {
         close.querySelector('.fa-times').onclick = (event) => {
             close.classList.remove('active');
@@ -24,7 +24,29 @@
         };
     });
 
-       
+    // Open cart
+    let cart = document.querySelector('.cart');
+    
+    
+    document.addEventListener('click', function(event) {
+        cart.style.display = 'block';
+        const shoppingCart = event.target.closest('.fa-cart-shopping');
+        if (shoppingCart !== null) {
+            cart.classList.add('active');
+        }
+    });
+
+    // Close cart
+    
+    document.addEventListener('click', function(event) {
+       let closeCart = event.target.closest('.close');
+       if (closeCart !== null) {
+           cart.classList.remove('active');
+           cart.style.display = 'none';
+       }
+    });
+
+     // Cart  
     
     let removeCartItemButtons = document.getElementsByClassName('btn-danger')
     for (let i = 0; i < removeCartItemButtons.length; i++) {
