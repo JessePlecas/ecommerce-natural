@@ -30,7 +30,10 @@
               <a href="products.html">Products</a>
             </li>
           </ul>
-          <i class="fa-solid fa-cart-shopping"></i>
+          <div class="cart-icon">
+            <i  id="cartValue" class="fa badge fa-lg" value=0>&#xf07a;</i>
+          </div> 
+          
         </nav>
         
     </header>
@@ -542,20 +545,18 @@
                                   </div>     
                             </div>
       </div>
-      
-      <section class="cart container content-section">
-        <h2 class="section-header">CART</h2>
-        <div class="cart-items"></div> 
-        <div class="cart-total">
-            <strong class="cart-total-title">Total</strong>
-            <span class="cart-total-price">$0</span>
-        </div>
-        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
-        <i class="fas fa-times close"></i>
-      </section>
-      
-
       </div>
+    </section>
+    <section class="cart container content-section">
+      <h2 class="section-header">CART</h2>
+      <div class="cart-items"></div> 
+      <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">€0</span>
+      </div>
+      <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+      <i class="fas fa-times close"></i>
+      
     </section>
     <footer>
       <h1 class="footer-title fancy"><span class="fancy-span">natural</span></h1></div>
