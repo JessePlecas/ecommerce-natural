@@ -28,6 +28,9 @@
             <a href="products.html">Products</a>
           </li>
         </ul>
+        <div class="cart-icon">
+          <i  id="cartValue" class="fa badge fa-lg" value=0>&#xf07a;</i>
+        </div>
       </nav>
     </header>
 
@@ -70,7 +73,7 @@
       </section>
     </div>
 
-    <section class="landing-products">
+    <section class="landing-products products-container">
       <ul class="card-wrapper">
         <li id="productDetails" class="card" data-name="0">
           <img class="srcImage" src="images/product-1.jpg" alt="Biodegradable cotton-buds" />
@@ -570,7 +573,7 @@
 </div>
 
 <section class="cart container content-section">
-  <h2 class="section-header">CART</h2>
+  <h2 class="cart-header">CART</h2>
   <div class="cart-items"></div> 
   <!-- Cart Row appends here-->
   <div class="cart-total">
@@ -578,6 +581,7 @@
       <span class="cart-total-price">$0</span>
   </div>
   <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+  <i class="fas fa-times close"></i>
 </section>
 
 <section class="about-section">

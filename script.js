@@ -24,6 +24,7 @@
     });
 
     // Open cart
+   
     let productBG = document.querySelector('.products-container');
     let cart = document.querySelector('.cart');
     document.addEventListener('click', function(event) {

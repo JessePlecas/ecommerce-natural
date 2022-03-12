@@ -341,8 +341,8 @@ nav a:focus {
 /*== Shopping cart icon ==*/
 
 .cart-icon {
-  position: absolute;
-  top: 10%;
+  position: fixed;
+  top: 3%;
   right: 10%;
   transition: all .2s ease-in-out; 
   cursor: pointer;
@@ -360,7 +360,7 @@ nav a:focus {
   content:attr(value);
   font-size:12px;
   color: var(--clr-title);
-  background: red;
+  background: var(--clr-info-bg);
   border-radius:50%;
   padding: 0 5px;
   position:relative;
@@ -1031,7 +1031,7 @@ footer {
 
 /*==== product section ====*/
 .mix {
-  background: var(--clr-dark)
+  background: var(--clr-dark);
 }
 
 .products {
@@ -1231,10 +1231,9 @@ footer {
 }
 
 /* ======== CART ========= */
-
 .cart {
-  position: absolute;
-  top: 10%;
+  position: fixed;
+  top: 0;
   right: 0;
   min-height: 80vh;
   width: 100%;
@@ -1250,8 +1249,15 @@ footer {
   display: inline-block;
 }
 
-.products-container.active {
-  background-color:rgba(0, 0, 0, .8);
+.products-container.active:after {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
 }
 
 
@@ -1263,7 +1269,8 @@ footer {
 
 .cart-header {
   font-weight: bold;
-  font-size: 1.25em;
+  font-size: clamp(0.8em, 4vw, 2em);
+  padding: 1em;
 }
 
 .cart-column {
@@ -1397,7 +1404,7 @@ footer {
   border: solid 1px var(--clr-product);
   padding: 10px;
   border-radius: 5px;
-  margin: 30px auto 60px auto;
+  margin: 1em;
   font-size: 1.4em;
   
 }
